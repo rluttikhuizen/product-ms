@@ -7,8 +7,8 @@ services:
     ports:
       - "3000:3000"
     links:
-      - mongo
-  mongo:
+      - product-db
+  product-db:
     container_name: product-db
     image: mongo
     volumes:
